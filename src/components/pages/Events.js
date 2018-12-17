@@ -18,8 +18,8 @@ class Events extends Component {
                 This is the map container.
             </div>
             <SearchDetails />
-            <EventsList />
           </div>
+          <EventsList />
       </div>
     )
   }

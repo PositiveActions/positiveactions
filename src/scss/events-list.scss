@@ -1,0 +1,147 @@
+//  Events Page
+.map-container {
+    width: 90%;
+    margin-left: 5%;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 75px -23px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 75px -23px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 75px -23px rgba(0,0,0,0.75);
+
+
+    .map-title {
+      color: black;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 15px;
+  }
+
+  .map {
+    height: 40vh;
+    background-color: $secondary;
+    background-image: linear-gradient(270deg, $secondary 25%, $primary 100%);    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  //  Search details 
+  .search-details-container {
+    display: flex;
+    padding: 20px 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    .search-name {
+      flex: 0.5;
+      margin: 40px 0;
+      padding: 0 10px;
+      border-left: solid 5px $secondary;
+    }
+
+    .events-info {
+      flex: 1;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .event-type {
+        font-size: 1.3em;
+        color: $text-secondary;
+      }
+
+      .event-value {
+        font-size: 1.3em;
+      }
+    }
+  }
+}
+
+//  Events list
+.events-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    //  Eevnt card
+    .event-card-container {
+      width: 90%;
+      border-radius: 10px;
+      margin: 20px 0;
+      -webkit-box-shadow: 0px 0px 75px -23px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 75px -23px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 75px -23px rgba(0,0,0,0.75);
+  
+      .event-image {
+        background-color: $secondary;
+        background-image: linear-gradient(90deg, $secondary 25%, $tertiary 100%);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        color: white;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .event-content {
+        display: flex;
+        justify-content: space-between;
+  
+        .card-left {
+          flex: 1;
+          margin: 10px 0;
+          padding: 10px;
+  
+          .event-title {
+            font-size: 2em;
+          }
+  
+          .event-description {
+            color: $text-secondary;
+            font-weight: lighter;
+            padding: 10px;
+          }
+  
+          .event-search-infos {
+            display: flex;
+            justify-content: space-around;
+            margin: 10px 0;
+  
+            div {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+  
+              i {
+                padding: 0 3px;
+                color: $secondary;
+              }
+            }
+          }
+        }
+        
+        .card-right {
+          flex: 0.5;
+          margin: 10px 0;
+          border-left: 1px solid $text-secondary;
+          padding: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+  
+          div {
+            display: flex;
+            align-items: center;
+  
+            i {
+              padding: 0 3px;
+              color: $secondary;
+            }
+          }
+        }
+      }
+    }
+  }
