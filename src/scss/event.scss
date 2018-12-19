@@ -43,30 +43,48 @@
             .event-title {
                 margin: 20px 0;
                 padding: 20px 20px;
-                font-size: 2em;
                 border-left: solid 5px $secondary;
+
+                .event-name {
+                    font-size: 2em;
+                }
+
+                .event-address {
+                    font-size: 1em;
+                    margin-left: 20px;
+                    color: $text-secondary;
+                }
             }
     
             .event-description-text {
+                padding: 20px 10px;
+                margin: 20px 0;
                 width: 90%;
                 margin-left: 5%;
-                padding: 20px 10px;
-                margin: 20px;
+
+                p {
+                    padding: 10px;
+                }
             }
 
             .event-description-details {
-                width: 90%;
-                margin-left: 5%;
-                padding: 20px 10px;
-                margin: 20px;
                 display: flex;
+                padding: 20px 10px;
+                margin: 20px 5%;
+                justify-content: space-around;
+                width: 90%;
 
                 .event-description-details-infos {
                     flex: 0.5;
+                    margin: 10px;
+                    -webkit-box-shadow: 24px 0px 80px -61px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 24px 0px 80px -61px rgba(0,0,0,0.75);
+                    box-shadow: 24px 0px 80px -61px rgba(0,0,0,0.75);
                 }
 
                 .event-comments {
                     flex: 1;
+                    margin: 10px;
                 }
             }
         }
