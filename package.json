@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^3.7.0",
     "materialize-css": "^1.0.0-rc.2",
     "node-sass": "^4.11.0",
     "react": "^16.6.3",

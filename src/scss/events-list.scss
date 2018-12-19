@@ -39,6 +39,7 @@
       flex: 0.5;
       margin: 40px 0;
       padding: 0 10px;
+      font-size: 2em;
       border-left: solid 5px $secondary;
     }
 
@@ -49,7 +50,7 @@
       align-items: center;
 
       .event-type {
-        font-size: 1.3em;
+        font-size: 1em;
         color: $text-secondary;
       }
 
@@ -140,6 +141,14 @@
               padding: 0 3px;
               color: $secondary;
             }
+          }
+
+          .form-button {
+              width: 80%;
+              margin-left: 10%;
+              flex: 0.3;
+              color: white;
+              background: linear-gradient(45deg, $primary 30%, $secondary 90%)
           }
         }
       }

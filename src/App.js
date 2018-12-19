@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import 'materialize-css/sass/materialize.scss';
 import './App.scss';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';

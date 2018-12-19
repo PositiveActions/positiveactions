@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Button from '@material-ui/core/Button';
 
 class EventCard extends Component {
   render() {
@@ -39,7 +40,9 @@ class EventCard extends Component {
                     <i className="material-icons tiny">people</i> 
                     <p>Attending : 17</p>
                 </div>
-                <a className="waves-effect waves-light btn btn-large" href="/events/1">Join the event</a>
+                <Button variant={'contained'} type="submit" className="form-button" href="/events/1">
+                    Join the event
+                </Button>
             </div>
         </div>
       </div>
