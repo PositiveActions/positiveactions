@@ -65,7 +65,7 @@ class SearchForm extends Component {
                     <FormControl>
                         <InputLabel htmlFor="location" className="input-label">Where ?</InputLabel>
                         <Input
-                            placeholder="Location..."
+                            placeholder="Location"
                             id="location"
                             className="form-input"
                         />
@@ -73,7 +73,7 @@ class SearchForm extends Component {
                     <FormControl>
                         <TextField
                             id="datestart"
-                            label="From..."
+                            label="From"
                             type="date"
                             defaultValue="2017-05-24"
                         />
@@ -81,13 +81,13 @@ class SearchForm extends Component {
                     <FormControl>
                         <TextField
                             id="dateend"
-                            label="To..."
+                            label="To"
                             type="date"
                             defaultValue="2017-05-24"
                         />
                     </FormControl>
                     <FormControl>
-                        <InputLabel htmlFor="select-multiple-checkbox">Tag</InputLabel>
+                        <InputLabel htmlFor="select-multiple-checkbox">Category</InputLabel>
                         <Select
                             multiple
                             value={this.state.name}

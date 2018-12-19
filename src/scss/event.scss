@@ -3,11 +3,72 @@
     color: white;
   
     .event-image {
-      height: 50vh;
-      background-color: red;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 50vh;
+        background-color: linear-gradient(90deg, $secondary 25%, $tertiary 100%);
+        z-index: 1;
     }
   
-    .event-map {
-  
+    .event-details {
+        width: 90%;
+        margin-left: 5%;
+        z-index: 2;
+        margin-top: 30vh;
+        background-color: white;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        -webkit-box-shadow: 0px 0px 75px -23px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 75px -23px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 75px -23px rgba(0,0,0,0.75);
+        color: black;
+
+        .event-map {
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $primary;
+            // border-bottom: 2px solid black;
+        }
+
+        .event-description {
+
+            .event-title {
+                margin: 20px 0;
+                padding: 20px 20px;
+                font-size: 2em;
+                border-left: solid 5px $secondary;
+            }
+    
+            .event-description-text {
+                width: 90%;
+                margin-left: 5%;
+                padding: 20px 10px;
+                margin: 20px;
+            }
+
+            .event-description-details {
+                width: 90%;
+                margin-left: 5%;
+                padding: 20px 10px;
+                margin: 20px;
+                display: flex;
+
+                .event-description-details-infos {
+                    flex: 0.5;
+                }
+
+                .event-comments {
+                    flex: 1;
+                }
+            }
+        }
     }
   }
