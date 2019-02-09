@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import SearchDetails from '../elements/SearchDetails';
 import EventsList from '../elements/EventsList';
 import Search from '../layout/Search';
+import Fab from '@material-ui/core/Fab';
 
 class Events extends Component {
   render() {
@@ -20,6 +21,9 @@ class Events extends Component {
             <SearchDetails />
           </div>
           <EventsList />
+          <Fab color="primary" className="add-event-button" href="/addevent">
+              +
+          </Fab>
       </div>
     )
   }

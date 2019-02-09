@@ -1,69 +1,34 @@
+.search-container {
+    form {
+        .form-button {
+            background-color: white;
+            border: 1px white solid;
+            color: $primary;
+            border-radius: 2px;
+        }
 
-//  Materialize colors
-.btn {
-    background-color: $primary;
-  }
-  
-  .btn:hover {
-    background-color: $secondary;
-  }
-  
-  .btn:focus {
-    background-color: $secondary;
-  }
-  
-  .input-field {
-    label {
-      color: white;
+        .form-button:hover {
+            -webkit-box-shadow: 0px 1px 25px -5px rgba(255,255,255,1);
+            -moz-box-shadow: 0px 1px 25px -5px rgba(255,255,255,1);
+            box-shadow: 0px 1px 25px -5px rgba(255,255,255,1);
+        }
+
+        input, label, div[class^="MuiSelect"], svg {
+            color: white !important;
+        }
+
+        svg:hover {
+            fill: $primary;
+        }
+
+        div[class^="MuiInputBase"]::before{
+            border-bottom: solid 1px white;
+        }
+        div[class^="MuiInputBase"]::after{
+            border-bottom: solid 1px white;
+        }
+        div[class^="MuiInput"]:hover{
+            border-bottom: solid 1px white;
+        }
     }
-    input[type=text]:focus + label {
-      color: #FFF !important;
-    }
-    input[type=text]:focus {
-      border-bottom: 1px solid #FFF !important;
-      box-shadow: 0 1px 0 0 #FFF !important;
-    }
-    input[type=text]:not(.browser-default) {
-      color: white;
-      border-bottom: 1px white solid
-    }
-    input[type=text]::placeholder {
-      color: white;
-    }
-  
-    .caret {
-      fill: white;   
-    }
-  
-    .dropdown-content {
-      background-color: $primary;
-      color: white;
-  
-      input[type="checkbox"]:checked + span:not(.lever):before {
-        border-right: 2px solid white;
-        border-bottom: 2px solid white;
-        border-left: none;
-        border-top: none;
-      }
-      input[type="checkbox"] + span:not(.lever):before, input[type="checkbox"]:not(.filled-in) + span:not(.lever):after {
-        border: 2px solid white;
-      }
-    }
-  }
-  
-  .datepicker-container {
-    input[type=text]:not(.browser-default) {
-      color: black;
-    }
-  
-    .datepicker-done, .datepicker-cancel , .datepicker-table td.is-today {
-      color: $primary;
-    }
-    .datepicker-table td.is-selected, .datepicker-date-display {
-      background-color: $primary;
-    }
-  }
-  
-  .dropdown-content li > a, .dropdown-content li > span {
-    color: $primary;
-  }
+}

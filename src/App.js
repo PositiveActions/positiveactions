@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import 'materialize-css/sass/materialize.scss';
 import './App.scss';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -7,6 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Search from './components/layout/Search';
 import Events from './components/pages/Events';
 import Event from './components/pages/Event';
+import EventForm from './components/pages/EventForm';
 
 class App extends Component {
   render() {
@@ -18,6 +18,7 @@ class App extends Component {
             <Route exact path="/search" component={Search} />
             <Route exact path="/" component={Events} />
             <Route exact path="/events/:id" component={Event} />
+            <Route exact path="/addevent" component={EventForm} />
           </Switch>
           <div className="footer">
             Footer
